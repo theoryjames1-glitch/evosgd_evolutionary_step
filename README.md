@@ -1,4 +1,3 @@
-Love it. Let’s make an “evolution-aware” SGD: standard gradient steps most of the time, but every so often it spins up a small population of mutated parameter sets, evaluates their “fitness” (loss), keeps the fittest (“natural selection”), and recombines them (simple averaging) before continuing SGD. Think of it as SGD with periodic evolutionary exploration.
 
 # PyTorch: EvoSGD (SGD + periodic evolutionary step)
 
@@ -222,4 +221,4 @@ for step in range(800):
 * **Adaptation**: gradually shrink mutation (`sigma_decay`) as training progresses.
 * **Exploit + Explore**: SGD exploits local gradient info every step; evolution explores new regions periodically.
 
-If you’d like this for NumPy/JAX/TensorFlow, or want fancier genetics (per-layer sigma, crossover masks, novelty search, or Lamarckian tweaks that seed momentum from elites), say the word and I’ll wire it in.
+
